@@ -1,69 +1,22 @@
-.top-header {
-    border-bottom: 1px solid #5323ca;
-
-    &__detail {
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
 .header {
-    background-image: url(../images/slider-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    &__contain {
+        &--flex {
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+        }
+    }
+    &--bg{
+        background-image: url(../images/header-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      
+    }
 
     &__inner {
-        background: linear-gradient(60deg, rgba(105, 14, 208, 0.9) 10%, rgba(23, 13, 162, 0.9) 100%) transparent;
-        height: 900px;
-        &--page{
-            height: 500px;
-            margin-bottom: 100px;
+        &--background {
+            background: rgba(56, 65, 80, 0.5);
+            border-bottom: 1px solid #3d4655;
         }
     }
-
-    &__about {
-        direction: rtl;
-
-    }
-
-    &__contain {
-        width: 900px;
-        padding: 200px 0px 0px;
-        &--innerpage{
-            padding: 100px 0px;
-            font-size: 18px;
-            color: #fff;
-           
-            h1{
-                text-transform: unset!important;
-                padding-bottom: 20px!important;
-            }
-            a{
-                color: #fff;
-                text-decoration: none;
-                font-size: 18px;
-                
-            }
-        }
-
-        h5 {
-            font-size: 20px;
-            color: #d4d3eb;
-            padding-bottom: 30px;
-            font-family: 'Roboto', sans-serif;
-            letter-spacing: 1px;
-        }
-
-        h1 {
-            font-size: 60px;
-            text-transform: uppercase;
-            color: #fff;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 600;
-            padding-bottom: 30px;
-            line-height: 70px;
-        }
-
-    }
-
 }

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include 'head.php' ?>
+    <?php include 'layout/head.php' ?>
 
 <body>
-    <?php include 'home-contact.php' ?>
-    <?php include 'footer.php' ?>
+
+    <?php include 'layout/header.php' ?>
+
+
 </body>
 
 </html>

@@ -1,0 +1,23 @@
+.slider{
+    height: 500px;
+    width: 100%;
+    &--flex{
+        display: flex;
+        align-items: center;
+    }
+    &__inner {
+        width: 100%;
+        text-align: center;
+        span{
+            font-size: 60px;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        h1{
+            font-size: 40px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+}
