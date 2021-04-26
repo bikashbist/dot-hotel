@@ -1,0 +1,48 @@
+@media (min-width: 768px) {
+    .article--work {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+        border-radius: 20px;
+        overflow: hidden;
+    
+        .article__inner {
+            grid-column: span 1;
+            grid-row: span 2;
+            position: relative;
+           
+        }
+       
+    }
+
+}
+@media (min-width: 768px) {
+    .two-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        &__inner {
+            grid-column: span 2;
+            grid-row: span 2;
+            position: relative;
+           
+        }
+       
+    }
+
+}
+@media (min-width: 768px) {
+    .four-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        &__inner {
+            grid-column: span 2;
+            grid-row: span 2;
+            position: relative;
+            &--padding{
+                padding-right: 20px;
+            }
+           
+        }
+       
+    }
+
+}

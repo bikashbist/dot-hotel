@@ -1,0 +1,103 @@
+.about-section {
+    margin-bottom: 100px;
+    &__detail {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    }
+
+    &__contain {
+        grid-column: span 3;
+        grid-row: span 3;
+
+        &--img {
+            position: relative;
+            
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 10px;
+                height: 280px;
+                display: inline-block;
+                background: #da24ff;
+                border-radius: 8px;
+            }
+            img{
+                margin-left: 40px;
+            }
+
+            
+        }
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    &__features {
+        display: flex;
+        align-items: center;
+
+        &--list {
+            width: 350px;
+            border-right: 2px solid #da24ff;
+
+            li {
+                position: relative;
+                list-style-type: none;
+                font-size: 18px;
+                line-height: 40px;
+                color: #686a6f;
+                font-family: "Roboto";
+
+                &:before {
+                    content: "\f00c";
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    -moz-osx-font-smoothing: grayscale;
+                    -webkit-font-smoothing: antialiased;
+                    display: inline-block;
+                    font-style: normal;
+                    font-variant: normal;
+                    text-rendering: auto;
+                    line-height: 30px;
+                    font-size: 14px;
+                    margin-right: 10px;
+                    color: #da24ff;
+                }
+            }
+        }
+
+        &--circle {
+            background-color: #851ff9;
+            color: #fff;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            text-align: center;
+            position: relative;
+            margin-left: 30px;
+
+            &--middle {
+
+                transform: translate(-50%, -50%);
+                top: 50%;
+                position: absolute;
+                left: 50%;
+
+            }
+        }
+    }
+
+}
